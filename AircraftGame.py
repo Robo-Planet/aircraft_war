@@ -9,20 +9,20 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Aircraft War Game')
 
 # Loading game music
-BULLETSHOT_SOUNDTEST = pygame.mixer.Sound('image/sound/bullet.wav')
-OPPONENT1_DOWN_SOUNDTEST = pygame.mixer.Sound('image/sound/opponent1_down.wav')
-GAMEOVER_SOUNDTEST = pygame.mixer.Sound('image/sound/game_over.wav')
+BULLETSHOT_SOUNDTEST = pygame.mixer.Sound('images/sound/bullet.wav')
+OPPONENT1_DOWN_SOUNDTEST = pygame.mixer.Sound('images/sound/opponent1_down.wav')
+GAMEOVER_SOUNDTEST = pygame.mixer.Sound('images/sound/game_over.wav')
 BULLETSHOT_SOUNDTEST.set_volume(0.3)
 OPPONENT1_DOWN_SOUNDTEST.set_volume(0.3)
 GAMEOVER_SOUNDTEST.set_volume(0.3)
-pygame.mixer.music.load('image/sound/game_music.wav')
+pygame.mixer.music.load('images/sound/game_music.wav')
 pygame.mixer.music.play(-1, 0.0)
 pygame.mixer.music.set_volume(0.25)
 
 # loading background image
-GAME_BACKGROUND = pygame.image.load('image/image/background.png').convert()
-GAME_OVER = pygame.image.load('image/image/gameover.png')
-filename = 'image/image/aircraft_shooter.png'
+GAME_BACKGROUND = pygame.image.load('images/image/background.png').convert()
+GAME_OVER = pygame.image.load('images/image/gameover.png')
+filename = 'images/image/aircraft_shooter.png'
 AIRCRAFT_IMAGES = pygame.image.load(filename)
 
 # Set player related parameters
